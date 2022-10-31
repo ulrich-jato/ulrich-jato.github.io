@@ -680,13 +680,21 @@ body {
   max-width: 33.33%;
 } */
 
-.portfolio-links {
+/* .portfolio-links {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   gap: 4.8rem;
   margin: 9.6rem auto;
+} */
+.portfolio-links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.8rem;
+  margin: 9.6rem auto;
 }
+
 .portfolio-link {
   text-decoration: none;
 }
