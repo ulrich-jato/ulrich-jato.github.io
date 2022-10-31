@@ -1,0 +1,240 @@
+/*
+******** 01-TYPOGRAPHY SYSTEM ********
+- Font sizes(px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Font weights:
+  Default: 400
+  Medium: 500
+  Semi-bold: 600
+  Bold: 700
+
+- Line-height:
+  Default: 1
+  Small: 1.05
+  medium: 1.2
+  Paragraph default: 1.6
+
+- Letter spacing
+  -0.5px
+   0.75px
+
+******** 02-COLORS ********
+- Primary : #1c7ed6
+- Tints: 
+#d2e5f7
+#e8f2fb
+- Shades: #1971c1
+- Accents:
+- Greys: 
+#444
+##333
+
+******** 03-IMAGES AND ILLUSTRATIONS ********
+******** 04-ICONS ********
+
+******* 05-SHADOWS ********
+box-shadows: 
+
+******* 06-BORDER-RADIUS ********
+border-radius: 10px
+
+******* 07-WHITESPACE ********
+- Spacing system (px): 
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*  10/16 = 0.625 * 100 = 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #444;
+}
+
+/****************************/
+/* MAIN HEADER SECTION      */
+/****************************/
+
+.main-header {
+  border-top: 1px solid #1c7ed6;
+  background-color: #e8f2fb;
+}
+
+.header-container {
+  height: 9.6rem;
+  padding: 0 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-logo {
+  height: 8.6rem;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10px;
+  color: #444;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #1971c1;
+}
+
+.main-nav-link.login-link:link,
+.main-nav-link.login-link:visited {
+  color: #1c7ed6;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 2px #1c7ed6;
+}
+
+.main-nav-link.login-link:hover,
+.main-nav-link.login-link:active {
+  color: #fff;
+  background-color: #1971c1;
+}
+
+.main-nav-link.cta-link:link,
+.main-nav-link.cta-link:visited {
+  color: #fff;
+  background-color: #1c7ed6;
+}
+.main-nav-link.cta-link:hover,
+.main-nav-link.cta-link:active {
+  background-color: #1971c1;
+}
+
+/****************************/
+/*       HERO SECTION       */
+/****************************/
+.hero-section {
+  padding: 8rem 0 9.6rem 0;
+  background-color: #d2e5f7;
+  border-top: 1px solid #1c7ed6;
+}
+.hero-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.primary-heading {
+  font-size: 4.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+
+.hero-text-description {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 3.2rem;
+}
+
+.hero-customer-box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 9.6rem;
+}
+
+.hero-customer-img {
+  height: 4.4rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 4px solid #d2e5f7;
+}
+
+.hero-customer-img:last-child {
+  margin-right: 0;
+}
+
+.hero-customer-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.hero-customer-number {
+  color: #1971c1;
+  font-size: 2rem;
+}
+
+/****************************/
+/* GENERAL REUSABLE SECTION */
+/****************************/
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+.margin-right-small {
+  margin-right: 2.4rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10px;
+  color: #444;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn--fill:link,
+.btn--fill:visited {
+  background-color: #1c7ed6;
+  color: #fff;
+}
+
+.btn--fill:hover,
+.btn--fill:active {
+  background-color: #1971c1;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  color: #444;
+  background-color: #fff;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  color: #444;
+  background-color: #d2e5f7;
+  box-shadow: inset 0 0 0 3px #fff;
+}
