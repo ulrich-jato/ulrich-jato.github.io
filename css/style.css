@@ -716,7 +716,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4.8rem;
-  margin: 9.6rem auto;
+  margin-bottom: 6.8rem;
 }
 
 .portfolio-link {
@@ -821,10 +821,7 @@ body {
   }
 
   .portfolio-links {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 4.8rem;
-    margin: 9.6rem auto;
   }
   .contact-content {
     grid-template-columns: 1fr;
@@ -844,10 +841,13 @@ body {
 }
 
 @media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
   .section-aside {
     width: 100vw;
   }
-  html {
-    font-size: 50%;
+  .form-container {
+    margin: 0;
   }
 }
