@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="services page" />
+    <meta name="description" content="courses page" />
     <meta name="author" content="Jato Ulrich Guiffo Kengne" />
-    <title>Services</title>
+    <title>Courses</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,11 +38,13 @@
             <li>
               <a class="main-nav-link" href="about.html"><ion-icon class="nav-link" name="person-outline"></ion-icon><span>About</span> </a>
             </li>
+
             <li>
-              <a class="main-nav-link" href="courses.html"><ion-icon class="nav-link" name="book-outline"></ion-icon><span>Courses</span> </a>
+              <a class="main-nav-link active-nav-link" href="courses.html"><ion-icon class="nav-link" name="book-outline"></ion-icon><span>Courses</span> </a>
             </li>
+
             <li>
-              <a class="main-nav-link active-nav-link" href="services.html"><ion-icon class="nav-icon" name="list-outline"></ion-icon><span>Services</span> </a>
+              <a class="main-nav-link " href="services.html"><ion-icon class="nav-icon" name="list-outline"></ion-icon><span>Services</span> </a>
             </li>
             <li>
               <a class="main-nav-link" href="portfolio.html"><ion-icon class="nav-icon" name="book-outline"></ion-icon><span>Portfolio</span> </a>
@@ -57,73 +59,78 @@
       <div id="menu" class="menu fas fa-bars"></div>
       <!-- main section start here -->
       <header class="header">
-        <h1 class="header-heading">MY SERVICES</h1>
+        <h1 class="header-heading">MY COURSES</h1>
       </header>
-      <section class="service-container">
-        <div class="heading">
-          <h2 class="secondary-heading">My <span>Services</span></h2>
-        </div>
-        <div class="service-content">
-          <div class="service">
-            <img src="img/web-design.jpg" class="service-img" alt="web design image" />
-            <div class="service-info-container">
-              <h3 class="service-title">Web Design</h3>
-              <p class="service-description">
-                I design clean, beautiful and engaging websites and web applications that meet your business objectives. Not only do they look good and work
-                well, but they are also built with the latest tools and technology.
+      
+      <section class="course-container">
+        <!-- <div class="heading"> -->
+        <h2 class="secondary-heading">My <span>Courses</span></h2>
+        <!-- </div> -->
+        <form class="course-form" action="">
+            <div class="course-form-item">
+              <label  class="course-form-label" for="course-search">Search course by name:</label><br>
+             <input class="course-input"  size="30" placeholder="Search course by name" type="text" id="course-search">
+             <button class="search-course-btn" type="submit"><ion-icon class="course-icon" name="search-outline"></ion-icon></button>
+            </div>
+            <div class="course-form-item">
+              <label class="course-form-label" for="course-level">Filter course by level:</label><br>
+              <select class="course-select" name="course-level" id="course-level">
+                <option value="All Courses" selected>All courses</option>
+                <option value="Level 1">Level 1</option>
+                <option value="Level 2">Level 2</option>
+                <option value="Level 3">Level 3</option>
+                <option value="Level 4">Level 4</option>
+              </select>
+            </div>
+            <div class="course-form-item">
+              <label  class="course-form-label" for="course-lowest-highest">Filter Course from Lowest/Highest:</label><br>
+              <select class="course-sort-select" name="course-lowest-highest" id="course-lowest-highest">
+                <option value="lowest-to-highest">Lowest to Highest</option>
+                <option value="highest-to-lowest">Highest to Lowest</option>
+              </select>
+            </div>
+          </form>
+        
+        <div class="course-content">
+          <div class="course">
+            <img src="img/web-design.jpg" class="course-img" alt="web design image" />
+            <div class="course-info-container">
+              <h3 class="course-title">
+                Web Design
+              </h3>
+              <p class="course-level">Level 2</p>
+              <p class="course-code">CST8120</p>
+              <p class="course-description">
+                The essentials of computer software, hardware, and laptop management form the foundation for building further technical programming skills. Learn to configure your laptop environment, basic PC and troubleshoot problems. Students create backups, install virus protection, and manage files through a basic understanding of the Windows Operating System.
               </p>
             </div>
           </div>
-          <div class="service">
-            <img src="img/web-development.jpg" class="service-img" alt="web development image" />
-            <div class="service-info-container">
-              <h3 class="service-title">Web Development</h3>
-              <p class="service-description">
-                I develop websites and web applications using open-source solutions and custom frameworks to provide high-quality and user-friendly products. I
-                build with the latest technologies to ensure maximum security.
+          <div class="course">
+            <img src="img/web-design.jpg" class="course-img" alt="web design image" />
+            <div class="course-info-container">
+              <h3 class="course-title">
+                Web Design
+              </h3>
+              <p class="course-level">Level 2</p>
+              <p class="course-code">CST8120</p>
+              <p class="course-description">
+                The essentials of computer software, hardware, and laptop management form the foundation for building further technical programming skills. Learn to configure your laptop environment, basic PC and troubleshoot problems. Students create backups, install virus protection, and manage files through a basic understanding of the Windows Operating System.
               </p>
             </div>
           </div>
-          <div class="service">
-            <img src="img/embedded-systems.jpg" class="service-img" alt="embedded system image" />
-            <div class="service-info-container">
-              <h3 class="service-title">Embedded Systems programming</h3>
-              <p class="service-description">
-                I write, test, and maintain computer programs to control microcontroller-based embedded systems to automate processes ranging from simple home
-                automation systems to more complex systems.
+          <div class="course">
+            <img src="img/web-design.jpg" class="course-img" alt="web design image" />
+            <div class="course-info-container">
+              <h3 class="course-title">
+                Web Design
+              </h3>
+              <p class="course-level">Level 2</p>
+              <p class="course-code">CST8120</p>
+              <p class="course-description">
+                The essentials of computer software, hardware, and laptop management form the foundation for building further technical programming skills. Learn to configure your laptop environment, basic PC and troubleshoot problems. Students create backups, install virus protection, and manage files through a basic understanding of the Windows Operating System.
               </p>
             </div>
           </div>
-          <div class="service">
-            <img src="img/pc-mobile.jpg" class="service-img" alt="image of pc and mobile devices" />
-            <div class="service-info-container">
-              <h3 class="service-title">PC & Mobile Apps Development</h3>
-              <p class="service-description">
-                I develop PC and mobile applications using the best programming practices to ensure high-quality and user-friendly products. These applications
-                are built with the latest technologies to ensure maximum security.
-              </p>
-            </div>
-          </div>
-          <div class="service">
-            <img src="img/database.jpg" class="service-img" alt="image illustrating database" />
-            <div class="service-info-container">
-              <h3 class="service-title">Database Design</h3>
-              <p class="service-description">
-                I design, create, and test databases that are maintainable, secure and adaptable to changing business needs, using normalization.
-              </p>
-            </div>
-          </div>
-          <div class="service">
-            <img src="img/search-engine.jpg" class="service-img" alt="image illustrating google search engine " />
-            <div class="service-info-container">
-              <h3 class="service-title">Search Engine Optimization</h3>
-              <p class="service-description">
-                I use scientific practices to increase your online visibility when people search for products or services, which places you on the first page of
-                Google and puts your brand in front of customers..
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
       <!-- about container ends -->
       <!-- main section ends -->
