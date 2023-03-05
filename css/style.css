@@ -8,7 +8,7 @@
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
-/* -----------Defining color variables----------*/
+/* ---------------Defining color variables---------------*/
 :root {
   --aside-main-bg-color: #343a40;
   --main-text-color: #fff;
@@ -20,11 +20,13 @@
   --main-bg-color: #212529;
 }
 
+/* ----------Changing selection Backgroung color----------*/
 *::selection {
   background-color: var(--decoration-color);
   color: var(--selection-text-color);
 }
 
+/* ---------------Resetting margin and padding-----------*/
 * {
   margin: 0;
   padding: 0;
@@ -781,7 +783,10 @@ body {
     margin-left: 0;
   }
 
-  .section-aside.toggle {
+  /* .section-aside.toggle {
+    left: 0%;
+  } */
+  .toggle {
     left: 0%;
   }
 
