@@ -851,6 +851,9 @@ body {
   html {
     font-size: 50%;
   }
+  .home {
+    padding: 0 3rem;
+  }
   .section-aside {
     width: 100vw;
   }
