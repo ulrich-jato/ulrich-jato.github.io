@@ -259,8 +259,6 @@ const courses = [
 
 // Create a new copy of courses and Reverse the order
 const reverseCourses = courses.slice().reverse();
-//Empty the course container in HTML
-containerCourse.innerHTML = "";
 
 /////////////////////////////////////////////////////////////////
 /// Functions
@@ -322,7 +320,7 @@ const sortCourses = function (courses, e) {
   }
 };
 
-//Functionn to search courses by keywords
+//Function to search courses by keywords
 const searchCourses = function (courses) {
   const filterCourses = courses.filter((course) => {
     return course.title.toLowerCase().includes(inputCourseSearch.value.toLowerCase());
@@ -342,9 +340,9 @@ const closeMenu = function () {
 
 // Displays all courses
 displayAllCourses(courses);
-
 //////////////////////////////////////////////////////////////
-// Event Listener
+// Event Listeners
+
 menu.addEventListener("click", openMenu);
 
 window.addEventListener("scroll", closeMenu);

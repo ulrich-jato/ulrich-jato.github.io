@@ -10,16 +10,15 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <!-- Google fonts link-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
-
-    <!--  -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- ionicons link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- javascript link -->
+    <script src="js/script.js" type="text/javascript" defer></script>
   </head>
   <body>
     <!-- Main container start here -->
@@ -44,7 +43,7 @@
             </li>
 
             <li>
-              <a class="main-nav-link " href="services.html"><ion-icon class="nav-icon" name="list-outline"></ion-icon><span>Services</span> </a>
+              <a class="main-nav-link" href="services.html"><ion-icon class="nav-icon" name="list-outline"></ion-icon><span>Services</span> </a>
             </li>
             <li>
               <a class="main-nav-link" href="portfolio.html"><ion-icon class="nav-icon" name="book-outline"></ion-icon><span>Portfolio</span> </a>
@@ -61,76 +60,50 @@
       <header class="header">
         <h1 class="header-heading">MY COURSES</h1>
       </header>
-      
+
       <section class="course-container">
         <!-- <div class="heading"> -->
         <h2 class="secondary-heading">My <span>Courses</span></h2>
         <!-- </div> -->
         <form class="course-form" action="">
-            <div class="course-form-item">
-              <label  class="course-form-label" for="course-search">Search course by name:</label><br>
-             <input class="course-input"  size="30" placeholder="Search course by name" type="text" id="course-search">
-             <button class="search-course-btn" type="submit"><ion-icon class="course-icon" name="search-outline"></ion-icon></button>
-            </div>
-            <div class="course-form-item">
-              <label class="course-form-label" for="course-level">Filter course by level:</label><br>
-              <select class="course-select" name="course-level" id="course-level">
-                <option value="All Courses" selected>All courses</option>
-                <option value="Level 1">Level 1</option>
-                <option value="Level 2">Level 2</option>
-                <option value="Level 3">Level 3</option>
-                <option value="Level 4">Level 4</option>
-              </select>
-            </div>
-            <div class="course-form-item">
-              <label  class="course-form-label" for="course-lowest-highest">Filter Course from Lowest/Highest:</label><br>
-              <select class="course-sort-select" name="course-lowest-highest" id="course-lowest-highest">
-                <option value="lowest-to-highest">Lowest to Highest</option>
-                <option value="highest-to-lowest">Highest to Lowest</option>
-              </select>
-            </div>
-          </form>
-        
+          <div class="course-form-item">
+            <label class="course-form-label" for="course-search">Search course by name:</label><br />
+            <input class="course-input" size="30" placeholder="Search course by name" type="text" id="course-search" />
+            <button class="search-course-btn" type="submit"><ion-icon class="course-icon" name="search-outline"></ion-icon></button>
+          </div>
+          <div class="course-form-item">
+            <label class="course-form-label" for="course-level">Filter course by level:</label><br />
+            <select class="course-select" name="course-level" id="course-level">
+              <option value="All Courses" selected>All courses</option>
+              <option value="Level 1">Level 1</option>
+              <option value="Level 2">Level 2</option>
+              <option value="Level 3">Level 3</option>
+              <option value="Level 4">Level 4</option>
+            </select>
+          </div>
+          <div class="course-form-item">
+            <label class="course-form-label" for="course-lowest-highest">Filter Course from Lowest/Highest:</label><br />
+            <select class="course-sort-select" name="course-lowest-highest" id="course-lowest-highest">
+              <option value="lowest-to-highest">Lowest to Highest</option>
+              <option value="highest-to-lowest">Highest to Lowest</option>
+            </select>
+          </div>
+        </form>
         <div class="course-content">
-          <div class="course">
+          <!-- <div class="course">
             <img src="img/web-design.jpg" class="course-img" alt="web design image" />
             <div class="course-info-container">
-              <h3 class="course-title">
-                Web Design
-              </h3>
+              <h3 class="course-title">Web Design</h3>
               <p class="course-level">Level 2</p>
               <p class="course-code">CST8120</p>
               <p class="course-description">
-                The essentials of computer software, hardware, and laptop management form the foundation for building further technical programming skills. Learn to configure your laptop environment, basic PC and troubleshoot problems. Students create backups, install virus protection, and manage files through a basic understanding of the Windows Operating System.
+                The essentials of computer software, hardware, and laptop management form the foundation for building further technical programming skills.
+                Learn to configure your laptop environment, basic PC and troubleshoot problems. Students create backups, install virus protection, and manage
+                files through a basic understanding of the Windows Operating System.
               </p>
             </div>
-          </div>
-          <div class="course">
-            <img src="img/web-design.jpg" class="course-img" alt="web design image" />
-            <div class="course-info-container">
-              <h3 class="course-title">
-                Web Design
-              </h3>
-              <p class="course-level">Level 2</p>
-              <p class="course-code">CST8120</p>
-              <p class="course-description">
-                The essentials of computer software, hardware, and laptop management form the foundation for building further technical programming skills. Learn to configure your laptop environment, basic PC and troubleshoot problems. Students create backups, install virus protection, and manage files through a basic understanding of the Windows Operating System.
-              </p>
-            </div>
-          </div>
-          <div class="course">
-            <img src="img/web-design.jpg" class="course-img" alt="web design image" />
-            <div class="course-info-container">
-              <h3 class="course-title">
-                Web Design
-              </h3>
-              <p class="course-level">Level 2</p>
-              <p class="course-code">CST8120</p>
-              <p class="course-description">
-                The essentials of computer software, hardware, and laptop management form the foundation for building further technical programming skills. Learn to configure your laptop environment, basic PC and troubleshoot problems. Students create backups, install virus protection, and manage files through a basic understanding of the Windows Operating System.
-              </p>
-            </div>
-          </div>
+          </div> -->
+        </div>
       </section>
       <!-- about container ends -->
       <!-- main section ends -->
@@ -206,11 +179,5 @@
       </div>
     </footer>
     <!-- footer section ends -->
-
-    <!-- jquery cdn link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-    <!-- javascript link -->
-    <script src="js/script.js"></script>
   </body>
 </html>
