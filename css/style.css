@@ -155,7 +155,7 @@ body {
   background-color: var(--aside-second-bg-color);
   font-size: 1.6rem;
   border-radius: 20px;
-  padding: 1.2rem 3.2rem;
+  padding: 1.2rem 2.8rem;
   transition: all 0.5s;
 }
 .btn:hover,
@@ -176,7 +176,8 @@ body {
 }
 
 .heading {
-  padding: 6.8rem 0;
+  /* padding: 6.8rem 0; */
+  padding: 4rem 0;
 }
 .heading:first-child {
   padding-top: 3.6rem;
@@ -852,7 +853,7 @@ body {
     font-size: 50%;
   }
   .home {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   .section-aside {
     width: 100vw;
