@@ -1,17 +1,24 @@
+<!--Name: Jato Ulrich Guiffo Kengne 
+    Date: March 05, 2023 
+    Section: CST 8285 section 303
+    Assignment: 01 
+    File: courses.html 
+    Assignment objective: build a personal portfolio
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="courses page" />
-    <meta name="author" content="Jato Ulrich Guiffo Kengne" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="courses page">
+    <meta name="author" content="Jato Ulrich Guiffo Kengne">
     <title>Courses</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
     <!-- Google fonts link-->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" >
     <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- ionicons link -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -24,8 +31,8 @@
     <main class="main-container">
       <!-- Section aside start here -->
       <aside class="section-aside">
-        <img class="profile-picture" src="img/picture.jpg" alt="my profile picture" />
-        <h1 class="my-name">Jato Ulrich</h1>
+        <img class="profile-picture" src="img/picture.jpg" alt="my profile picture">
+        <p class="my-name">Jato Ulrich</p>
         <p class="my-title">Software Developer</p>
 
         <nav class="main-nav">
@@ -64,14 +71,14 @@
         <!-- <div class="heading"> -->
         <h2 class="secondary-heading">My <span>Courses</span></h2>
         <!-- </div> -->
-        <form class="course-form" action="">
+        <form class="course-form" action="process.php">
           <div class="course-form-item">
-            <label class="course-form-label" for="course-search">Search course by name:</label><br />
-            <input class="course-input" size="30" placeholder="Search course by name" type="text" id="course-search" />
+            <label class="course-form-label" for="course-search">Search course by name:</label><br>
+            <input class="course-input" size="30" placeholder="Search course by name" type="text" id="course-search">
             <button class="search-course-btn" type="submit"><ion-icon class="course-icon" name="search-outline"></ion-icon></button>
           </div>
           <div class="course-form-item">
-            <label class="course-form-label" for="course-level">Filter course by level:</label><br />
+            <label class="course-form-label" for="course-level">Filter course by level:</label><br>
             <select class="course-select" name="course-level" id="course-level">
               <option value="All Courses" selected>All courses</option>
               <option value="Level 1">Level 1</option>
@@ -81,7 +88,7 @@
             </select>
           </div>
           <div class="course-form-item">
-            <label class="course-form-label" for="course-lowest-highest">Filter Course from Lowest/Highest:</label><br />
+            <label class="course-form-label" for="course-lowest-highest">Filter Course from Lowest/Highest:</label><br>
             <select class="course-sort-select" name="course-lowest-highest" id="course-lowest-highest">
               <option value="lowest-to-highest">Lowest to Highest</option>
               <option value="highest-to-lowest">Highest to Lowest</option>
@@ -107,7 +114,7 @@
       <!-- course container ends -->
       <!-- main section ends -->
       <section class="cta-section">
-        <h1 class="cta-heading">ARE YOU READY TO TAKE YOUR BUSINESS TO THE NEXT LEVEL ?</h1>
+        <h2 class="cta-heading">ARE YOU READY TO TAKE YOUR BUSINESS TO THE NEXT LEVEL ?</h2>
         <p><a href="contact.html" class="btn btn-cat-section">contact</a></p>
       </section>
     </main>
