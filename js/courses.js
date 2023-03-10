@@ -343,3 +343,7 @@ btnSearch.addEventListener("click", (e) => {
   e.preventDefault();
   searchCourses(courses);
 });
+
+inputCourseSearch.addEventListener("input", (e) => {
+  searchCourses(courses);
+});
