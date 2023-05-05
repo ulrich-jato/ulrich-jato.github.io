@@ -23,7 +23,7 @@
 <p>The Portfolio page showcases my projects, including descriptions, screenshots, and links to the live websites or Github repositories.</p>
 
 <h3>Services</h3>
-<p>The Services page provides information about the web development services that I offer, including website design and development, website maintenance, and website optimization.</p>
+<p>The Services page provides information about services that I offer, including software development, embedded systems programming, and Internet Applications development, Databse Design, Search Engine Optimization.</p>
 
 <h2>Navigation</h2>
 <p>The website includes a navigation menu that appears on all pages, allowing visitors to easily navigate between pages.</p>
