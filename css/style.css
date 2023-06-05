@@ -20,6 +20,10 @@
   --main-bg-color: #212529;
 }
 
+.margin-top {
+  margin-top: 2rem;
+}
+
 /* ----------Changing selection Backgroung color----------*/
 *::selection {
   background-color: var(--decoration-color);
@@ -476,6 +480,7 @@ body {
 /*******************************************/
 /*   STYLING COURSE AND SERVICES PAGES     */
 /******************************************/
+.project-content,
 .course-content,
 .service-content {
   display: grid;
@@ -486,6 +491,7 @@ body {
   margin-bottom: 9.6rem;
 }
 
+.project,
 .course,
 .service {
   background-color: var(--aside-second-bg-color);
@@ -494,21 +500,30 @@ body {
   transition: all 0.3s;
   cursor: pointer;
 }
+.project {
+  background-color: var(--aside-main-bg-color);
+}
+
+.project:hover,
 .course:hover,
 .service:hover {
   transform: translateY(-1rem);
 }
 
+.project-img,
 .course-img,
 .service-img {
   width: 100%;
   height: 40%;
 }
 
+.project-info-container,
 .course-info-container,
 .service-info-container {
   padding: 1.4rem;
 }
+
+.project-title,
 .service-title,
 .course-title {
   font-size: 1.8rem;
@@ -519,6 +534,8 @@ body {
 .service-title {
   font-size: 2rem;
 }
+
+.project-description,
 .course-description,
 .service-description {
   font-size: 1.4rem;
@@ -543,6 +560,8 @@ body {
   color: var(--second-text-color);
 } */
 
+.project-level,
+.project-code,
 .course-code,
 .course-level {
   display: inline-block;
@@ -794,7 +813,7 @@ body {
   .toggle {
     left: 0%;
   }
-
+  .project-content,
   .course-content,
   .service-content {
     grid-template-columns: 1fr 1fr;
@@ -821,6 +840,8 @@ body {
   .objective-title {
     padding: 0 2rem;
   }
+
+  .project-content,
   .course-form,
   .course-content,
   .service-content {
