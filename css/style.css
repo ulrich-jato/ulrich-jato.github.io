@@ -514,13 +514,13 @@ body {
 .course-img,
 .service-img {
   width: 100%;
-  height: 40%;
+  height: 42%;
 }
 
 .project-info-container,
 .course-info-container,
 .service-info-container {
-  padding: 1.4rem;
+  padding: 2rem;
 }
 
 .project-title,
@@ -538,9 +538,10 @@ body {
 .project-description,
 .course-description,
 .service-description {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   color: var(--second-text-color);
+  padding-bottom: 4rem;
 }
 
 .service-description {
@@ -633,7 +634,7 @@ body {
 
 .contact-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .contact-info-item {
